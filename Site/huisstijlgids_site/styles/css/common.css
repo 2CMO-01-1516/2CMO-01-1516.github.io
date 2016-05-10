@@ -2,6 +2,7 @@
 /* CSS Document */
 body{
     font-family:Oswald,"Helvetica Neue",Helvetica,Arial,cursive;
+    color:#686868;
 }
 
 /* NAVIGATION */
@@ -10,14 +11,26 @@ body{
 	border-color:transparent
 }
 
+.navbar {
+    padding: 20px 0 20px 0 !important ;
+}
+
 .navbar-default .navbar-brand{
 	color:#fff;
-	font-family:Oswald,"Helvetica Neue",Helvetica,Arial,cursive
+	font-family:Oswald,"Helvetica Neue",Helvetica,Arial,cursive;
+    background:url(../../../images_site/styles_img/logo.png) no-repeat;
+    background-size: cover;
+    width: 150px;
 }
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active{
-    color:#ee7613}
+    color:#ee7613;
+    background:url(../../../images_site/styles_img/logo.png);
+    background-size: cover;
+    width: 150px;
+}
 .navbar-default .navbar-collapse{
-	border-color:rgba(255,255,255,.02)}
+	border-color:rgba(255,255,255,.02)
+}
 .navbar-default .navbar-toggle{
 	background-color: none;
 }
@@ -32,7 +45,7 @@ body{
 	text-transform:uppercase;
 	font-weight:400;
 	letter-spacing:1px;
-	color:#fff
+	color:#686868;
 }
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus{
 	color:#ee7613;
@@ -41,11 +54,11 @@ body{
 .navbar-default .navbar-nav>.active>a{
 		border-radius:0;
 		color:#fff;
-		background-color:#ee7613
+		background-color:#ee7613;
 }
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{
 	color:#fff;
-	background-color:#ee7613
+	background-color:#ee7613;
 }
 
 /* BUTTON */
@@ -195,7 +208,7 @@ ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a
     border-color: #000000;
 }
 .zwart{
-    background-color: #000000;
+    background-color:#686868;
     height: 200px;
     width: 100%;
 }
