@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Promovendo</title>
+        <meta name="description" content="Dit is een website voor Waregem">
+        <meta name="author" content="Judie Verhelst, Lisa Walcarius en Marie Van Landuyt">
+        
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="../styles_site/css/bootstrap.css" >
+    <!-- Custom CSS -->
+        <link rel="stylesheet" href="../styles_site/css/common.css">
+        <link rel="stylesheet" href="../styles_site/css/font-awesome.css">
+        <link rel="stylesheet" href="../styles_site/css/weather-icons.min.css">
+        <link rel="stylesheet" href="../styles_site/css/animate.css">
+    </head>
+    
+    <body>
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="../index.html"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../tebeleven_site/index.html">Te beleven</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../overons_site/nieuws.html">Nieuws</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../overons_site/index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+        <!-- Services Section -->
+    <section id="beleven">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading animated fadeInDown">Contacteer ons</h2>
+                </div>
+                <form class="cd-form floating-labels col-xs-12 col-xsm-12 col-md-12 col-lg-12">
+		              <fieldset>
+                          <div class="col-xs-12 col-xsm-12 col-md-6 col-lg-6">
+                              <div class="icon animated fadeInLeft"><input class="user" type="text" placeholder="Naam" name="cd-name" id="cd-name" required></div> 
+                              <div class="icon animated fadeInLeft"><input class="email error" type="email" placeholder="Email" name="cd-email" id="cd-email" required></div>
+                              <div class="icon animated fadeInLeft"><input class="company" type="text" placeholder="Onderwerp" name="cd-company" id="cd-company"></div>
+                          </div>
+                          <div class="col-xs-12 col-xsm-12 col-md-6 col-lg-6">
+                              <div class="icon animated fadeInRight"><textarea class="message" name="cd-textarea" placeholder="Laat hier een boodschap achter..." id="cd-textarea" required></textarea></div>
+                          </div>
+                          <div class="text-left col-xs-12 col-xsm-12 col-md-12 col-lg-12">
+		      	               <input class="btn-oranje animated fadeInRight" type="submit" value="Verzenden">
+		                  </div>
+		              </fieldset>
+	           </form>
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading animated fadiInLeft">Kom naar ons toe</h2>
+                </div>
+                <div class="col-xs-12 col-xsm-12 col-md-6 col-lg-6 text-center">Gemeenteplein 2 <br>8790 Waregem<br>T: 058/43 28 04</div>
+                <div id="map" class="col-xs-12 col-xsm-12 col-md-6 col-lg-6"></div>
+                    <script>
+                        function initMap() {
+                            var mapDiv = document.getElementById('map');
+                            var map = new google.maps.Map(mapDiv, {
+                                center: {lat: 44.540, lng: -78.546},
+                                zoom: 8
+                                                                    });
+                                            }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+           </div>
+           <div class="row">
+                 <div class="container row-grey" id="body-detailpagina">
+                     <!--body kom naar ons-->
+                        <div class="col col-xs-12 col-md-6 animated">
+                            <div class="tussentitel">openbaar vervoer</div>
+                                <div>
+                                    <p>Waregem kent een druk netwerk van openbaar vervoer, zowel de trein als de bus brengt jou naar Waregem toe</p>
+                                 <!--btn "meer info"-->
+                                        <a href="../overons_site/index.html">
+                                        <div class="col-xs-12 col-md-12 btn-oranje">Meer info</div>
+                                        </a>  
+                                </div>
+                        </div>
+                     
+                        <div class="col col-xs-12 col-md-6">
+                            <div id="bounce" class="tussentitel animate slideUp">met de wagen</div>
+                                <div>
+                                    <p>O.a via de E17 is Waregem in een vingerknip bereikbaar. U kan uw wagen kwijt in één van de ruime parkings aan de rand van de stad.</p>
+                                 <!--btn "meer info"-->
+                                        <a href="../overons_site/index.html">
+                                            <div class="col-xs-12 col-md-12 btn-oranje">Meer info</div>
+                                        </a>   
+                                </div>
+                        </div>
+                     
+                <div class="col col-xs-12 col-md-6">
+                    <div class="tussentitel animated fadeInLeftShort">met de fiets</div>
+                        <div>
+                            <p>Als groene stad steunt Waregem de groene long van Vlaanderen, kom met de fiets naar Waregem en ontvang een gratis koffie in Café Local!</p>
+                                 <!--btn "meer info"-->
+                                <a href="../overons_site/index.html">
+                                    <div class="col-xs-12 col-md-12 btn-oranje">Meer info</div>
+                                </a>   
+                        </div>
+                    </div>
+                     
+                <div class="col col-xs-12 col-md-6">
+                    <div class="tussentitel">Vanuit het buitenland</div>
+                        <div>
+                            <p>Dichtsbijzijnde luchthaven is Oostdende en Zaventem. Vanaf Zaventem is Waregem te bereiken in 1u30, via Oostende is dit slechts 40minuten.</p>
+                                 <!--btn "meer info"-->
+                                <a href="../overons_site/index.html">
+                                    <div class="col-xs-12 col-md-12 btn-oranje">Meer info</div>
+                                </a>   
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <span class="copyright">Gemeenteplein 2<br>8790 Waregem</span>  
+                </div>
+                <div class="col-md-7">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+    <!--Javascript-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="../styles_site/js/javascript.js"></script>
+        <script language="JavaScript" type="text/javascript" src="../styles_site/js/bootstrap.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    </body>
+</html>
